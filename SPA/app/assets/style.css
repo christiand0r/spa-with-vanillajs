@@ -1,0 +1,175 @@
+:root {
+  --fontSize: 16px;
+  --fontFamily: sans-serif;
+  --aColor: #01579b;
+  --aColorHover: #00b0ff;
+  --errorColor: #dc3545;
+  --warningColor: #dca735;
+  --postCard: #eceff1;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily);
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--aColor);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--aColorHover);
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.error {
+  padding: 1rem;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: var(--errorColor);
+}
+
+.search-form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-form input {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+  border: none;
+  border-bottom: thin solid var(--aColor);
+}
+
+.grid-fluid {
+  margin: 1rem auto;
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.header > * {
+  margin: 1rem auto;
+}
+
+.loader {
+  margin: 1rem auto;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+.post-card {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80%;
+  background-color: var(--postCard);
+  border-radius: 12px;
+}
+
+.post-card h2 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.post-card p {
+  display: flex;
+  justify-content: space-around;
+}
+
+.search a {
+  display: flex;
+  justify-content: center;
+}
+
+.post-page {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80%;
+  background-color: var(--postCard);
+}
+
+.post-page > aside {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+.post-page > hr {
+  border: thin solid #cfd8dc;
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.post-page time {
+  margin: auto;
+  display: block;
+}
+
+.post-page > article {
+  padding: 0 2rem;
+}
+
+.post-page img,
+.post-page audio,
+.post-page iframe,
+.post-page figure,
+.post-page video {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+}
+
+.post-page figure figcaption {
+  text-align: center;
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.zero {
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 150%;
+  text-align: center;
+  background-color: var(--aColor);
+  color: #fff;
+}
